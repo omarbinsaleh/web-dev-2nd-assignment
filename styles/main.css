@@ -177,6 +177,13 @@ header {
 
    .nav-bar .hamburger-container {
       display: block;
+      text-align: center;
+   }
+
+   .hamburger {
+      /* width: 30px; */
+      height: 100%;
+      font-size: 1.7rem;
    }
 }
 
@@ -310,7 +317,7 @@ main {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   gap: 3rem;
+   gap: 4rem   ;
 }
 
 
@@ -347,7 +354,6 @@ main {
 
 .habit-card {
    padding: 0.5rem;
-   border: 1px solid green;
    display: flex;
    flex-direction: column;
    align-items: center;
