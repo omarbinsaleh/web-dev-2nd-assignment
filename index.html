@@ -65,8 +65,8 @@
          </div>
       </section>
    </header>
-   <main class="main-section section">
-      <section class="section-1">
+   <main class="main-section">
+      <section class="section section-1">
          <h1 class="title">Change your habbit</h1>
          <p class="description text-collaps-5">
             Embarking on a fitness journey isn’t just about lifting weights or running on a treadmill—it’s about
@@ -78,7 +78,8 @@
                <img src="./images/image 3.png" alt="man in gym">
                <h3 class="card-title">Movement</h3>
                <p class="description text-collaps-3">
-                  Embrace movement: It revitalizes body and mind, from brisk walks to joyful dances, fostering health and connection to oneself.
+                  Embrace movement: It revitalizes body and mind, from brisk walks to joyful dances, fostering health
+                  and connection to oneself.
                </p>
             </div>
 
@@ -86,7 +87,8 @@
                <img src="./images/image 2.png" alt="man in gym">
                <h3 class="card-title">Time</h3>
                <p class="description text-collaps-3">
-                  Respect time: Plan workouts, maintain consistency, and prioritize recovery. Each minute dedicated to fitness propels you closer to your goals.
+                  Respect time: Plan workouts, maintain consistency, and prioritize recovery. Each minute dedicated to
+                  fitness propels you closer to your goals.
                </p>
             </div>
 
@@ -94,7 +96,8 @@
                <img src="./images/image 4.png" alt="man in gym">
                <h3 class="card-title">Practice</h3>
                <p class="description text-collaps-3">
-                  Practice diligently: Whether lifting weights or perfecting form, consistent effort builds skill, confidence, and lasting fitness achievements.
+                  Practice diligently: Whether lifting weights or perfecting form, consistent effort builds skill,
+                  confidence, and lasting fitness achievements.
                </p>
             </div>
 
@@ -102,23 +105,99 @@
                <img src="./images/image 5.png" alt="man in gym">
                <h3 class="card-title">Weights Loss</h3>
                <p class="description text-collaps-3">
-                  Weight loss: Commit to balanced nutrition and regular exercise. Small, sustainable changes lead to gradual progress and lasting health improvements.
+                  Weight loss: Commit to balanced nutrition and regular exercise. Small, sustainable changes lead to
+                  gradual progress and lasting health improvements.
                </p>
             </div>
          </div>
       </section>
 
-      <section class="section-2">
+      <!-- section 2 Run an extra mile easily -->
+      <section class="section section-2">
          <div class="content-section-2">
             <h1 class="title">Run an Extra Mile Easily</h1>
             <p class="description text-collaps-5">
-               Running an extra mile is about mindset and strategy. Start with a steady pace, focus on breathing, and visualize success. Break the distance into manageable segments. Embrace discomfort as growth. Celebrate milestones and stay consistent. With determination and resilience, running that extra mile becomes a rewarding journey of personal achievement.
+               Running an extra mile is about mindset and strategy. Start with a steady pace, focus on breathing, and
+               visualize success. Break the distance into manageable segments. Embrace discomfort as growth. Celebrate
+               milestones and stay consistent. With determination and resilience, running that extra mile becomes a
+               rewarding journey of personal achievement.
             </p>
             <button class="btn btn-join-now">Join Nonw</button>
          </div>
          <div class="img-container">
             <img src="./images/run.jpg" alt="">
          </div>
+      </section>
+
+      <!-- section 3: BMI calculator -->
+      <section class="section-bmi-calculator">
+         <section class="section bmi-header">
+            <h1 class="title title-bmi-calculator">BMI Calculator</h1>
+            <p class="description text-collaps-5">
+               Welcome to our BMI (Body Mass Index) calculator, designed to help you understand your body composition and set realistic fitness goals. Whether you're just starting your fitness journey or looking to track your progress, our BMI calculator provides a quick and reliable way to assess your body mass index based on your height and weight.
+            </p>
+         </section>
+         <main class="bmi-main">
+            <div class="section bmi-content">
+               <div class="bmi-left">
+                  <h2>BMI Calculator Chart</h2>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>BMI</th>
+                           <th>Weight Status</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Below 18.5</td>
+                           <td>Underweight</td>
+                        </tr>
+                        <tr>
+                           <td>18.5 - 24.9</td>
+                           <td>Healthy</td>
+                        </tr>
+                        <tr>
+                           <td>25 - 29.9</td>
+                           <td>Overweight</td>
+                        </tr>
+                        <tr>
+                           <td>30 and Above</td>
+                           <td>Obese</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+
+               <div class="bmi-right">
+                  <h2>Calculate your BMI</h2>
+                  <p class="description text-collaps-5">
+                     Understanding your Body Mass Index (BMI) is crucial for maintaining a healthy lifestyle. Our BMI calculator is a simple tool designed to give you insights into your body composition based on your height and weight. Whether you're aiming to lose weight, build muscle, or simply stay fit, knowing your BMI can help you set realistic goals and track your progress effectively.
+                  </p>
+                  <form class="bmi-form">
+                     <input type="number" name="height" id="bmi-height" class="bmi-height" placeholder="Height / cm">
+                     <input type="number" name="weight" id="bmi-weight" class="bmi-weight" placeholder="Weight / cm">
+                     <input type="number" name="age" id="bmi-age" class="bmi-age" placeholder="Age">
+                     <input list="genders" name="sex" id="bmi-sex" class="bmi-sex" placeholder="Sex">
+                   
+                     <input list="activity-factors" name="activity-factor" id="bmi-activity-factor" class="bmi-activity-factor" placeholder="Select an activity factor">
+                     
+                  </form>
+                  <datalist id="genders">
+                     <option value="Male"></option>
+                     <option value="Female"></option>
+                     <option value="Other"></option>
+                  </datalist>
+                  <datalist id="activity-factors">
+                     <option value="Sedentary"></option>
+                     <option value="Lightly Active"></option>
+                     <option value="Moderately Active"></option>
+                     <option value="Very Active"></option>
+                  </datalist>
+                  <button type="submit" class="btn btn-bmi">Calculate</button>
+               </div>
+            </div>
+         </main>
       </section>
    </main>
 </body>
