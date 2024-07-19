@@ -328,6 +328,12 @@ main {
    gap: 2rem;
 }
 
+.section-1 > p {
+   width: 100%;
+   max-width: 1000px;
+   text-align:center;
+}
+
 .habits {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
@@ -440,10 +446,12 @@ main {
 
 .section-bmi-calculator p {
    text-align: justify;
+   padding: 0;
 }
 
 .title-bmi-calculator {
    text-align: left;
+   margin: 0 0 1rem 0;
 }
 
 .bmi-main {
@@ -598,4 +606,87 @@ main {
 
 .btn-bmi:hover {
    background-color: var(--hover-color-bg);
+}
+
+/* styles for the section 4: Meet out team */
+.section-4 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2rem;
+   padding: 0;
+}
+
+.section-4 > h1, p {
+   padding: 0 var(--overall-padding);
+   
+}
+
+.section-4 > p {
+   text-align: center;
+   width: 100%;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.trainers {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 0.8rem;
+   padding: var(--overall-padding);
+   background-color: rgb(63, 63, 63);
+   border-radius: 1.1rem;
+   -webkit-border-radius: 1.1rem;
+   -moz-border-radius: 1.1rem;
+   -ms-border-radius: 1.1rem;
+   -o-border-radius: 1.1rem;
+}
+
+@media screen and (max-width: 600px) {
+   .trainers {
+      grid-template-columns: repeat(1, 1fr);
+      border-radius: 1rem;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      -ms-border-radius: 1rem;
+      -o-border-radius: 1rem;
+}
+}
+
+.trainer {
+   position: relative;
+   height: 300px;
+   border-radius: 0.5rem;
+   -webkit-border-radius: 0.5rem;
+   -moz-border-radius: 0.5rem;
+   -ms-border-radius: 0.5rem;
+   -o-border-radius: 0.5rem;
+}
+
+.trainer img {
+   width: 100%;
+   height: 100%;
+   filter: brightness(0.6);
+   -webkit-filter: brightness(0.6);
+   border-radius: 0.5rem;
+   -webkit-border-radius: 0.5rem;
+   -moz-border-radius: 0.5rem;
+   -ms-border-radius: 0.5rem;
+   -o-border-radius: 0.5rem;
+}
+
+.trainer > div {
+   position: absolute;
+   bottom: 1rem;
+   left: 1rem;
+}
+
+.trainer p {
+   color: gray;
+   font-weight: 600;
+}
+
+.trainer-1 {
+position: relative;
 }
