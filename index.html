@@ -10,6 +10,7 @@
 </head>
 
 <body>
+   <!-- header section -->
    <header class="header-section section">
       <nav class="nav-bar">
          <div class="brand">Fitness</div>
@@ -65,6 +66,8 @@
          </div>
       </section>
    </header>
+
+   <!-- main section -->
    <main class="main-section">
       <section class="section section-1">
          <h1 class="title">Change your habbit</h1>
@@ -73,7 +76,9 @@
             transforming your habits. Your habits determine your success in the gym and beyond. Here’s how you can make
             meaningful changes:
          </p>
+         <!-- Container for the habits -->
          <div class="habits">
+            <!-- Habit No 1 -->
             <div class="habit-card">
                <img src="./images/image 3.png" alt="man in gym">
                <h3 class="card-title">Movement</h3>
@@ -82,7 +87,7 @@
                   and connection to oneself.
                </p>
             </div>
-
+            <!-- Habit No 2 -->
             <div class="habit-card">
                <img src="./images/image 2.png" alt="man in gym">
                <h3 class="card-title">Time</h3>
@@ -91,7 +96,7 @@
                   fitness propels you closer to your goals.
                </p>
             </div>
-
+            <!-- Habit No 3 -->
             <div class="habit-card">
                <img src="./images/image 4.png" alt="man in gym">
                <h3 class="card-title">Practice</h3>
@@ -100,7 +105,7 @@
                   confidence, and lasting fitness achievements.
                </p>
             </div>
-
+            <!-- Habit No 4 -->
             <div class="habit-card">
                <img src="./images/image 5.png" alt="man in gym">
                <h3 class="card-title">Weights Loss</h3>
@@ -134,11 +139,15 @@
          <section class="section bmi-header">
             <h1 class="title title-bmi-calculator">BMI Calculator</h1>
             <p class="description text-collaps-5">
-               Welcome to our BMI (Body Mass Index) calculator, designed to help you understand your body composition and set realistic fitness goals. Whether you're just starting your fitness journey or looking to track your progress, our BMI calculator provides a quick and reliable way to assess your body mass index based on your height and weight.
+               Welcome to our BMI (Body Mass Index) calculator, designed to help you understand your body composition
+               and set realistic fitness goals. Whether you're just starting your fitness journey or looking to track
+               your progress, our BMI calculator provides a quick and reliable way to assess your body mass index based
+               on your height and weight.
             </p>
          </section>
          <main class="bmi-main">
             <div class="section bmi-content">
+               <!-- BMI Calculator Chart for the user-->
                <div class="bmi-left">
                   <h2>BMI Calculator Chart</h2>
                   <table>
@@ -168,38 +177,51 @@
                      </tbody>
                   </table>
                </div>
-
+               <!-- BMI Calculator for the user -->
                <div class="bmi-right">
                   <h2>Calculate your BMI</h2>
                   <p class="description text-collaps-5">
-                     Understanding your Body Mass Index (BMI) is crucial for maintaining a healthy lifestyle. Our BMI calculator is a simple tool designed to give you insights into your body composition based on your height and weight. Whether you're aiming to lose weight, build muscle, or simply stay fit, knowing your BMI can help you set realistic goals and track your progress effectively.
+                     Understanding your Body Mass Index (BMI) is crucial for maintaining a healthy lifestyle. Our BMI
+                     calculator is a simple tool designed to give you insights into your body composition based on your
+                     height and weight. Whether you're aiming to lose weight, build muscle, or simply stay fit, knowing
+                     your BMI can help you set realistic goals and track your progress effectively.
                   </p>
+                  <!-- BMI form for user input -->
                   <form class="bmi-form">
                      <input type="number" name="height" id="bmi-height" class="bmi-height" placeholder="Height / cm">
                      <input type="number" name="weight" id="bmi-weight" class="bmi-weight" placeholder="Weight / cm">
                      <input type="number" name="age" id="bmi-age" class="bmi-age" placeholder="Age">
                      <input list="genders" name="sex" id="bmi-sex" class="bmi-sex" placeholder="Sex">
-                   
-                     <input list="activity-factors" name="activity-factor" id="bmi-activity-factor" class="bmi-activity-factor" placeholder="Select an activity factor">
-                     
+
+                     <input list="activity-factors" name="activity-factor" id="bmi-activity-factor"
+                        class="bmi-activity-factor" placeholder="Select an activity factor">
+
                   </form>
+                  <!-- data list for the sex dropdown input field -->
                   <datalist id="genders">
                      <option value="Male"></option>
                      <option value="Female"></option>
                      <option value="Other"></option>
                   </datalist>
+                  <!-- data list for the acitvity factors dropdown input field -->
                   <datalist id="activity-factors">
                      <option value="Sedentary"></option>
                      <option value="Lightly Active"></option>
                      <option value="Moderately Active"></option>
                      <option value="Very Active"></option>
                   </datalist>
+                  <!-- form submit button -->
                   <button type="submit" class="btn btn-bmi">Calculate</button>
                </div>
             </div>
          </main>
       </section>
    </main>
+   
+   <!-- footer section -->
+   <footer>
+
+   </footer>
 </body>
 
 </html>
