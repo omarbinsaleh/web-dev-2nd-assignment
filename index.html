@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
    <link rel="stylesheet" href="styles/main.css" />
+   <script type="module" src="./js/main.js"></script>
    <title>Fitness</title>
 </head>
 
@@ -16,7 +17,7 @@
          <div class="brand">Fitness</div>
 
          <ul class="nav-links">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
             <li class="nav-item">
                <a href="#services" class="nav-link">Services</a>
             </li>
@@ -145,7 +146,7 @@
                on your height and weight.
             </p>
          </section>
-         <main class="bmi-main">
+         <main id="bmi-main" class="bmi-main">
             <div class="section bmi-content">
                <!-- BMI Calculator Chart for the user-->
                <div class="bmi-left">
@@ -178,7 +179,7 @@
                   </table>
                </div>
                <!-- BMI Calculator for the user -->
-               <div class="bmi-right">
+               <div id="bmi-right" class="bmi-right">
                   <h2>Calculate your BMI</h2>
                   <p class="description text-collaps-5">
                      Understanding your Body Mass Index (BMI) is crucial for maintaining a healthy lifestyle. Our BMI
@@ -187,9 +188,9 @@
                      your BMI can help you set realistic goals and track your progress effectively.
                   </p>
                   <!-- BMI form for user input -->
-                  <form class="bmi-form">
+                  <form id="bmi-calculator-form" class="bmi-form">
                      <input type="number" name="height" id="bmi-height" class="bmi-height" placeholder="Height / cm">
-                     <input type="number" name="weight" id="bmi-weight" class="bmi-weight" placeholder="Weight / cm">
+                     <input type="number" name="weight" id="bmi-weight" class="bmi-weight" placeholder="Weight / kg">
                      <input type="number" name="age" id="bmi-age" class="bmi-age" placeholder="Age">
                      <input list="genders" name="sex" id="bmi-sex" class="bmi-sex" placeholder="Sex">
 
@@ -211,7 +212,7 @@
                      <option value="Very Active"></option>
                   </datalist>
                   <!-- form submit button -->
-                  <button type="submit" class="btn btn-bmi">Calculate</button>
+                  <button id="bmi-form-submit" type="submit" class="btn btn-bmi">Calculate</button>
                </div>
             </div>
          </main>
