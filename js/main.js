@@ -28,21 +28,30 @@ document.addEventListener("DOMContentLoaded", () => {
       if (BMI) {
          showBMIResult(BMI)
       } else {
-         showBMIResult('Please fill in the form first');
+         showBMIResult('Please fill up the form first');
       }
 
       // reset the form
       bmiForm.reset();
-   })
-})
+   });
+});
 
-// ======================= Helper fucntion =======================
+// ======================= Begining of the Helper fucntions =======================
 function showBMIResult(result = 'BMI result is missing') {
    const parentElement = document.getElementById('bmi-right');
+
+   // clear the previos message
+   const bmiResultElem = document.getElementById('bmi-result');
+   if (bmiResultElem) {
+      parentElement.removeChild(bmiResultElem);
+   }
+
+   // create new result message
    const p = document.createElement('p');
+   p.id = 'bmi-result';
    p.classList.add('bmi-result');
    p.id = 'bmi-result';
-   p.textContent = `Result: ${result}.`;
+   p.textContent = `Result: Your BMI is ${result}.`;
 
    // create the ok button to dismiss the result popped up
    const okBtn = document.createElement('button');
@@ -53,11 +62,11 @@ function showBMIResult(result = 'BMI result is missing') {
    p.appendChild(okBtn);
 
    parentElement.appendChild(p);
-}
+};
 
 function removeBMIResult() {
    const parentElement = document.getElementById('bmi-right')
    const bmiResultElement = document.getElementById('bmi-result');
 
    parentElement.removeChild(bmiResultElement);
-}
+};
