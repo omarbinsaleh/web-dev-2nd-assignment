@@ -598,10 +598,12 @@ main {
 
 .bmi-sex {
    grid-column: 3 / -1;
+   cursor: pointer;
 }
 
 .bmi-activity-factor {
    grid-column: 1 / -1;
+   cursor: pointer;
 }
 
 .bmi-sex, .bmi-activity-factor {
