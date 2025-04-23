@@ -649,6 +649,9 @@ main {
    align-items: center;
    gap: 2rem;
    padding: 0;
+   padding: var(--overall-padding);
+   width: 100%;
+   max-width: 1350px;
 }
 
 .section-4 > h1, .section-4 > p {
@@ -667,14 +670,14 @@ main {
    width: 100%;
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   gap: 0.8rem;
-   padding: var(--overall-padding);
+   gap: 0.5rem;
+   padding: 0.5rem;
    background-color: rgb(63, 63, 63);
-   border-radius: 1.1rem;
-   -webkit-border-radius: 1.1rem;
-   -moz-border-radius: 1.1rem;
-   -ms-border-radius: 1.1rem;
-   -o-border-radius: 1.1rem;
+   border-radius: 0.8rem;
+   -webkit-border-radius: 0.8rem;
+   -moz-border-radius: 0.8rem;
+   -ms-border-radius: 0.8rem;
+   -o-border-radius: 0.8rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -765,6 +768,7 @@ position: relative;
    align-items: center;
    justify-content: space-between;
    gap: 2rem;
+   cursor: pointer;
 }
 
 .question-btn {
@@ -782,6 +786,7 @@ position: relative;
    -moz-border-radius: 0.2rem;
    -ms-border-radius: 0.2rem;
    -o-border-radius: 0.2rem;
+   cursor: pointer;
 }
 
 @media screen and (max-width: 650px) {
@@ -799,6 +804,14 @@ position: relative;
 
 .display-none {
    display: none;
+}
+
+.rotate-180 {
+   transform: rotate(180deg);
+   -webkit-transform: rotate(180deg);
+   -moz-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
+   -o-transform: rotate(180deg);
 }
 
 

@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
    // handle the BMI calculation
    const bmiForm = document.getElementById('bmi-calculator-form')
    const bmiCalculateBtn = document.getElementById('bmi-form-submit'); // this button will trigger the calculation
+   console.log(bmiCalculateBtn);
    bmiCalculateBtn.addEventListener('click', (e) => {
       const formData = new FormData(bmiForm);
       const height = parseFloat(formData.get('height')) / 100;
@@ -36,4 +37,20 @@ document.addEventListener("DOMContentLoaded", () => {
       // reset the form
       bmiForm.reset();
    });
+
+   // handle the click event on the question
+   document.querySelectorAll('.single-question').forEach(question => {
+      question.addEventListener('click', (e) => {
+         const targetElem = e.currentTarget;
+         const questionBtn = targetElem.querySelector('.question-btn img');
+         const answerElem = targetElem.querySelector('.answer-1');
+         if (answerElem.classList.contains('display-none')) {
+            answerElem.classList.remove('display-none');
+            questionBtn.classList.add('rotate-180')
+         } else {
+            answerElem.classList.add('display-none');
+            questionBtn.classList.remove('rotate-180')
+         }
+      })
+   })
 });
